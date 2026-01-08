@@ -25,13 +25,18 @@ struct RainBowQuizView: View {
                 quizView
             }
         }
-        //.navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Image(.quizLabel)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }
+        }
+        .sheet(item: $viewModel.newAward) { award in
+            AwardModalView(award: award, isPresented: Binding(
+                get: { viewModel.newAward != nil },
+                set: { if !$0 { viewModel.newAward = nil } }
+            ))
         }
     }
     
@@ -69,19 +74,6 @@ struct RainBowQuizView: View {
     
     private var quizView: some View {
         VStack(spacing: 30) {
-            // Progress indicator
-            HStack {
-                Text(viewModel.progressText)
-                    .font(.headline)
-                    .foregroundColor(.black)
-                Spacer()
-                Text(viewModel.scoreText)
-                    .font(.headline)
-                    .foregroundColor(.black)
-            }
-            .padding(.horizontal, 20)
-            .padding(.top, 20)
-            
             // Question
             if let question = viewModel.currentQuestion {
                 VStack(spacing: 25) {
@@ -122,6 +114,7 @@ struct RainBowQuizView: View {
                                         }
                                     }
                                     .padding(.horizontal, 40)
+                                    
                                 }
                             }
                             .disabled(viewModel.showResult)
@@ -168,39 +161,40 @@ struct RainBowQuizView: View {
                 .font(.title2)
                 .foregroundColor(.black)
             
-            VStack(spacing: 15) {
-                Text("Your Score")
-                    .font(.title3)
-                    .foregroundColor(.black)
-                
-                Text(viewModel.scoreTextFormatted)
-                    .font(.system(size: 50))
-                    .bold()
-                    .foregroundColor(.black)
-                
-                Text(viewModel.percentageText)
-                    .font(.title2)
-                    .foregroundColor(.black)
-            }
-            .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.white.opacity(0.8))
-            )
-            .padding(.horizontal, 40)
+            ZStack {
+                Image(.backToOnboardText)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                VStack(spacing: 15) {
+                    Text("Your Score")
+                        .font(.title3)
+                        .foregroundColor(.black)
+                    
+                    Text(viewModel.scoreTextFormatted)
+                        .font(.system(size: 50))
+                        .bold()
+                        .foregroundColor(.black)
+                    
+                    Text(viewModel.percentageText)
+                        .font(.title2)
+                        .foregroundColor(.black)
+                }
+                .padding()
+            }.padding()
+            
             
             Button {
                 viewModel.resetQuiz()
             } label: {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.blue.opacity(0.8))
-                        .frame(height: 60)
+                    Image(.backButton)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
                     
                     Text("Try Another Topic")
                         .font(.title3)
                         .bold()
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                 }
             }
             .padding(.horizontal, 40)

@@ -6,10 +6,72 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct SettingsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Image(.mainBack)
+                .resizable()
+                .ignoresSafeArea()
+            VStack{
+                Image(.settingsLabel)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Spacer()
+                ZStack {
+                    Image(.backToOnboardText)
+                        .resizable()
+                    VStack{
+                        Button {
+                            SKStoreReviewController.requestReview()
+                        } label: {
+                            ZStack {
+                                Image(.backButton)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Rate us")
+                                    .foregroundStyle(.black)
+                                    .font(.title)
+                                    .bold()
+                            }
+                        }
+                        Button {
+                            if let url = URL(string: "https://google.com") {
+                                UIApplication.shared.open(url)
+                            }
+                        } label: {
+                            ZStack {
+                                Image(.backButton)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Policy")
+                                    .foregroundStyle(.black)
+                                    .font(.title)
+                                    .bold()
+                            }
+                        }
+                        Button {
+                            if let url = URL(string: "https://google.com") {
+                                UIApplication.shared.open(url)
+                            }
+                        } label: {
+                            ZStack {
+                                Image(.backButton)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                Text("Terms")
+                                    .foregroundStyle(.black)
+                                    .font(.title)
+                                    .bold()
+                            }
+                        }
+
+                        
+                    }.padding(30)
+                }
+            }.padding()
+        }
     }
 }
 

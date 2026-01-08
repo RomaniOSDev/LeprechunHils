@@ -29,8 +29,10 @@ class QuizViewModel: ObservableObject {
     @Published var selectedAnswer: Int?
     @Published var showResult = false
     @Published var quizCompleted = false
+    @Published var newAward: Awards? = nil
     
     var questions: [QuizQuestion] = []
+    private let awardsManager = AwardsManager.shared
     
     // MARK: - Computed Properties
     
@@ -104,6 +106,53 @@ class QuizViewModel: ObservableObject {
             showResult = false
         } else {
             quizCompleted = true
+            checkAwards()
+        }
+    }
+    
+    func checkAwards() {
+        var earnedAwards: [Awards] = []
+        
+        // First Clover - первая награда за любое прохождение
+        if !awardsManager.isAwardEarned(.first) {
+            earnedAwards.append(.first)
+        }
+        
+        // Rainbow Starter - за прохождение любого квиза
+        if !awardsManager.isAwardEarned(.rainbow) {
+            earnedAwards.append(.rainbow)
+        }
+        
+        // Perfect score - Quiz Champion
+        if score == questions.count && !awardsManager.isAwardEarned(.chmpionQuiz) {
+            earnedAwards.append(.chmpionQuiz)
+        }
+        
+        // Topic-specific awards
+        if let topic = selectedTopic {
+            switch topic {
+            case .animals:
+                if !awardsManager.isAwardEarned(.animal) {
+                    earnedAwards.append(.animal)
+                }
+            case .food:
+                if !awardsManager.isAwardEarned(.food) {
+                    earnedAwards.append(.food)
+                }
+            case .flowers:
+                if !awardsManager.isAwardEarned(.flower) {
+                    earnedAwards.append(.flower)
+                }
+            default:
+                break
+            }
+        }
+        
+        // Earn awards
+        if !earnedAwards.isEmpty {
+            awardsManager.earnAwards(earnedAwards)
+            // Show the first new award
+            newAward = earnedAwards.first
         }
     }
     
@@ -224,4 +273,5 @@ class QuizViewModel: ObservableObject {
         }
     }
 }
+
 

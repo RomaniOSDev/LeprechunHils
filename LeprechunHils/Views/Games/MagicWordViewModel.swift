@@ -15,6 +15,9 @@ struct MagicWord {
 
 class MagicWordViewModel: ObservableObject {
     @Published var currentWordIndex = 0
+    @Published var newAward: Awards? = nil
+    
+    private let awardsManager = AwardsManager.shared
     
     let words: [MagicWord] = [
         MagicWord(word: "Adventure", description: "An exciting or dangerous experience. Going on a trip to explore new places is an adventure."),
@@ -62,6 +65,7 @@ class MagicWordViewModel: ObservableObject {
     func nextWord() {
         if canGoNext {
             currentWordIndex += 1
+            checkAwards()
         }
     }
     
@@ -70,5 +74,21 @@ class MagicWordViewModel: ObservableObject {
             currentWordIndex -= 1
         }
     }
+    
+    func checkAwards() {
+        // First Clover - первая награда за любое действие
+        if !awardsManager.isAwardEarned(.first) {
+            awardsManager.earnAward(.first)
+            newAward = .first
+            return
+        }
+        
+        // Word Explorer - за изучение всех слов (достижение последнего слова)
+        if currentWordIndex == words.count - 1 && !awardsManager.isAwardEarned(.word) {
+            awardsManager.earnAward(.word)
+            newAward = .word
+        }
+    }
 }
+
 

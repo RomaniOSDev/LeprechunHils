@@ -16,7 +16,7 @@ struct MagicWordView: View {
                 .resizable()
                 .ignoresSafeArea()
             
-            VStack(spacing: 30) {
+            VStack {
                 // Progress indicator
                 Text(viewModel.progressText)
                     .font(.headline)
@@ -28,24 +28,14 @@ struct MagicWordView: View {
                 // Word and description
                 VStack(spacing: 25) {
                     // Word
-                    ZStack {
-                        Image(.backButton)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: 80)
-                        
-                        Text(viewModel.currentWord.word)
-                            .font(.system(size: 40, weight: .bold))
-                            .monospaced()
-                            .foregroundColor(.black)
-                    }
+                    NewWordView(text: viewModel.currentWord.word)
                     
                     // Description
                     ZStack {
-                        Image(.backButton)
+                        Image(.backToOnboardText)
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: 200)
+                            .aspectRatio(contentMode: .fill)
+                            
                         
                         Text(viewModel.currentWord.description)
                             .font(.title3)
@@ -53,6 +43,7 @@ struct MagicWordView: View {
                             .foregroundColor(.black)
                             .padding(.horizontal, 40)
                             .padding(.vertical, 20)
+                            .minimumScaleFactor(0.5)
                     }
                 }
                 .padding(.horizontal, 20)
@@ -104,7 +95,12 @@ struct MagicWordView: View {
             }
             .padding()
         }
-        
+        .sheet(item: $viewModel.newAward) { award in
+            AwardModalView(award: award, isPresented: Binding(
+                get: { viewModel.newAward != nil },
+                set: { if !$0 { viewModel.newAward = nil } }
+            ))
+        }
     }
 }
 
