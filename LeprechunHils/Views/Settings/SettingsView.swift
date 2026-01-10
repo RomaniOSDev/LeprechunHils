@@ -37,7 +37,7 @@ struct SettingsView: View {
                             }
                         }
                         Button {
-                            if let url = URL(string: "https://google.com") {
+                            if let url = URL(string: "https://www.termsfeed.com/live/70da693f-574d-4e28-be25-1798e418f7dc") {
                                 UIApplication.shared.open(url)
                             }
                         } label: {
@@ -52,7 +52,7 @@ struct SettingsView: View {
                             }
                         }
                         Button {
-                            if let url = URL(string: "https://google.com") {
+                            if let url = URL(string: "https://www.termsfeed.com/live/00eef081-47ba-4d8a-bcb2-17b85edd016c") {
                                 UIApplication.shared.open(url)
                             }
                         } label: {
