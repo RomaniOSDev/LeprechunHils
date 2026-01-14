@@ -15,9 +15,46 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else {return}
-        window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UIHostingController(rootView: ContentView())
-        window?.makeKeyAndVisible()
+        let window = UIWindow(windowScene: windowScene)
+        self.window = window
+
+        let controller: UIViewController = {
+            let persistence = PersistenceManager.shared
+            
+            // Если ContentView был показан один раз, всегда показываем его
+            if persistence.hasShownContentView {
+                print("📱 ContentView был показан ранее, показываем ContentView")
+                let swiftUIView = ContentView()
+                return UIHostingController(rootView: swiftUIView)
+            }
+            
+            // Если был успешный WebView загрузка и есть сохраненный URL, показываем WebView
+            if persistence.hasSuccessfulWebViewLoad,
+               let savedUrlString = persistence.savedUrl,
+               let lastUrl = URL(string: savedUrlString),
+               !savedUrlString.isEmpty {
+                print("🌐 Last URL:", lastUrl)
+                // Используем WebViewContainer для сохраненного URL
+                let webViewContainer = WebViewContainer(
+                    urlString: savedUrlString,
+                    onFailure: {
+                        // Если сохраненный URL недоступен, показываем ContentView
+                        print("❌ Saved URL недоступен, показываем ContentView")
+                        persistence.hasShownContentView = true
+                    },
+                    onSuccess: {
+                        print("✅ Saved URL успешно загружен")
+                    }
+                )
+                return UIHostingController(rootView: webViewContainer)
+            } else {
+                // Первый запуск - показываем LoadingSplash
+                return LoadingSplash()
+            }
+        }()
+
+        window.rootViewController = controller
+        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
