@@ -3,79 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74E06B202F1047B00096ECA4 /* StoriCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E06B1F2F1047B00096ECA4 /* StoriCellView.swift */; };
-		74E06B222F1049380096ECA4 /* SimpleStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E06B212F1049380096ECA4 /* SimpleStoryView.swift */; };
-		74E2F49E2F0F0A210077B7C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E2F4942F0F0A210077B7C4 /* Assets.xcassets */; };
-		74E2F4A02F0F0A210077B7C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E2F4982F0F0A210077B7C4 /* LaunchScreen.storyboard */; };
-		74E2F4A12F0F0A210077B7C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E2F49A2F0F0A210077B7C4 /* Main.storyboard */; };
-		74E2F4A22F0F0A210077B7C4 /* AwardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F47A2F0F0A210077B7C4 /* AwardsManager.swift */; };
-		74E2F4A32F0F0A210077B7C4 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F47B2F0F0A210077B7C4 /* AwardsView.swift */; };
-		74E2F4A42F0F0A210077B7C4 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F47D2F0F0A210077B7C4 /* GamesView.swift */; };
-		74E2F4A52F0F0A210077B7C4 /* LeprechaunStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F47E2F0F0A210077B7C4 /* LeprechaunStoriesView.swift */; };
-		74E2F4A62F0F0A210077B7C4 /* MagicWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F47F2F0F0A210077B7C4 /* MagicWordView.swift */; };
-		74E2F4A72F0F0A210077B7C4 /* MagicWordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4802F0F0A210077B7C4 /* MagicWordViewModel.swift */; };
-		74E2F4A82F0F0A210077B7C4 /* MatchCloverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4812F0F0A210077B7C4 /* MatchCloverView.swift */; };
-		74E2F4A92F0F0A210077B7C4 /* MatchCloverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4822F0F0A210077B7C4 /* MatchCloverViewModel.swift */; };
-		74E2F4AA2F0F0A210077B7C4 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4832F0F0A210077B7C4 /* QuizViewModel.swift */; };
-		74E2F4AB2F0F0A210077B7C4 /* RainBowQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4842F0F0A210077B7C4 /* RainBowQuizView.swift */; };
-		74E2F4AC2F0F0A210077B7C4 /* AwardModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4862F0F0A210077B7C4 /* AwardModalView.swift */; };
-		74E2F4AD2F0F0A210077B7C4 /* AwardSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4872F0F0A210077B7C4 /* AwardSimpleView.swift */; };
-		74E2F4AE2F0F0A210077B7C4 /* NewWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4882F0F0A210077B7C4 /* NewWordView.swift */; };
-		74E2F4AF2F0F0A210077B7C4 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4892F0F0A210077B7C4 /* QuestionView.swift */; };
-		74E2F4B02F0F0A210077B7C4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F48B2F0F0A210077B7C4 /* MainView.swift */; };
-		74E2F4B12F0F0A210077B7C4 /* OnbordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F48D2F0F0A210077B7C4 /* OnbordingView.swift */; };
-		74E2F4B22F0F0A210077B7C4 /* OnBordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F48E2F0F0A210077B7C4 /* OnBordingViewModel.swift */; };
-		74E2F4B32F0F0A210077B7C4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4902F0F0A210077B7C4 /* SettingsView.swift */; };
-		74E2F4B42F0F0A210077B7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4932F0F0A210077B7C4 /* AppDelegate.swift */; };
-		74E2F4B52F0F0A210077B7C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F4952F0F0A210077B7C4 /* ContentView.swift */; };
-		74E2F4B62F0F0A210077B7C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F49B2F0F0A210077B7C4 /* SceneDelegate.swift */; };
-		74E2F4B72F0F0A210077B7C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2F49C2F0F0A210077B7C4 /* ViewController.swift */; };
+		74D73DAE2F17982C00611F50 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 74D73DAD2F17982C00611F50 /* AppsFlyerLib */; };
+		74D73DB12F17991300611F50 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 74D73DB02F17991300611F50 /* FirebaseDatabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		74E06B1F2F1047B00096ECA4 /* StoriCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriCellView.swift; sourceTree = "<group>"; };
-		74E06B212F1049380096ECA4 /* SimpleStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStoryView.swift; sourceTree = "<group>"; };
 		74E2F0502F0D3DCF0077B7C4 /* LeprechunHils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeprechunHils.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		74E2F47A2F0F0A210077B7C4 /* AwardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsManager.swift; sourceTree = "<group>"; };
-		74E2F47B2F0F0A210077B7C4 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
-		74E2F47D2F0F0A210077B7C4 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
-		74E2F47E2F0F0A210077B7C4 /* LeprechaunStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeprechaunStoriesView.swift; sourceTree = "<group>"; };
-		74E2F47F2F0F0A210077B7C4 /* MagicWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicWordView.swift; sourceTree = "<group>"; };
-		74E2F4802F0F0A210077B7C4 /* MagicWordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicWordViewModel.swift; sourceTree = "<group>"; };
-		74E2F4812F0F0A210077B7C4 /* MatchCloverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCloverView.swift; sourceTree = "<group>"; };
-		74E2F4822F0F0A210077B7C4 /* MatchCloverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCloverViewModel.swift; sourceTree = "<group>"; };
-		74E2F4832F0F0A210077B7C4 /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
-		74E2F4842F0F0A210077B7C4 /* RainBowQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainBowQuizView.swift; sourceTree = "<group>"; };
-		74E2F4862F0F0A210077B7C4 /* AwardModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardModalView.swift; sourceTree = "<group>"; };
-		74E2F4872F0F0A210077B7C4 /* AwardSimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardSimpleView.swift; sourceTree = "<group>"; };
-		74E2F4882F0F0A210077B7C4 /* NewWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordView.swift; sourceTree = "<group>"; };
-		74E2F4892F0F0A210077B7C4 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
-		74E2F48B2F0F0A210077B7C4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		74E2F48D2F0F0A210077B7C4 /* OnbordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingView.swift; sourceTree = "<group>"; };
-		74E2F48E2F0F0A210077B7C4 /* OnBordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBordingViewModel.swift; sourceTree = "<group>"; };
-		74E2F4902F0F0A210077B7C4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		74E2F4932F0F0A210077B7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74E2F4942F0F0A210077B7C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74E2F4952F0F0A210077B7C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		74E2F4962F0F0A210077B7C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74E2F4972F0F0A210077B7C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		74E2F4992F0F0A210077B7C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		74E2F49B2F0F0A210077B7C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74E2F49C2F0F0A210077B7C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9091F6A019B6E7E8289B9737 /* Pods-LeprechunHils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeprechunHils.release.xcconfig"; path = "Target Support Files/Pods-LeprechunHils/Pods-LeprechunHils.release.xcconfig"; sourceTree = "<group>"; };
 		9804767FE6FA78BD82F2E2D4 /* Pods-LeprechunHils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeprechunHils.debug.xcconfig"; path = "Target Support Files/Pods-LeprechunHils/Pods-LeprechunHils.debug.xcconfig"; sourceTree = "<group>"; };
 		BE954F90A6AF47C77EE0B113 /* Pods_LeprechunHils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeprechunHils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		74D73D9E2F1796A900611F50 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 74E2F04F2F0D3DCF0077B7C4 /* LeprechunHils */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		74D73D812F1796A900611F50 /* LeprechunHils */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (74D73D9E2F1796A900611F50 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = LeprechunHils; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		74E2F04D2F0D3DCF0077B7C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D73DB12F17991300611F50 /* FirebaseDatabase in Frameworks */,
+				74D73DAE2F17982C00611F50 /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +56,7 @@
 		74E2F0472F0D3DCF0077B7C4 = {
 			isa = PBXGroup;
 			children = (
-				74E2F49D2F0F0A210077B7C4 /* LeprechunHils */,
+				74D73D812F1796A900611F50 /* LeprechunHils */,
 				74E2F0512F0D3DCF0077B7C4 /* Products */,
 				F0A40AF2922CCB3AC114C1D2 /* Pods */,
 				413974C4FDF28E0C3926EEEA /* Frameworks */,
@@ -106,97 +69,6 @@
 				74E2F0502F0D3DCF0077B7C4 /* LeprechunHils.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		74E2F47C2F0F0A210077B7C4 /* Awards */ = {
-			isa = PBXGroup;
-			children = (
-				74E2F47A2F0F0A210077B7C4 /* AwardsManager.swift */,
-				74E2F47B2F0F0A210077B7C4 /* AwardsView.swift */,
-			);
-			path = Awards;
-			sourceTree = "<group>";
-		};
-		74E2F4852F0F0A210077B7C4 /* Games */ = {
-			isa = PBXGroup;
-			children = (
-				74E2F47D2F0F0A210077B7C4 /* GamesView.swift */,
-				74E2F47E2F0F0A210077B7C4 /* LeprechaunStoriesView.swift */,
-				74E2F47F2F0F0A210077B7C4 /* MagicWordView.swift */,
-				74E2F4802F0F0A210077B7C4 /* MagicWordViewModel.swift */,
-				74E2F4812F0F0A210077B7C4 /* MatchCloverView.swift */,
-				74E2F4822F0F0A210077B7C4 /* MatchCloverViewModel.swift */,
-				74E2F4832F0F0A210077B7C4 /* QuizViewModel.swift */,
-				74E2F4842F0F0A210077B7C4 /* RainBowQuizView.swift */,
-				74E06B212F1049380096ECA4 /* SimpleStoryView.swift */,
-			);
-			path = Games;
-			sourceTree = "<group>";
-		};
-		74E2F48A2F0F0A210077B7C4 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				74E2F4862F0F0A210077B7C4 /* AwardModalView.swift */,
-				74E2F4872F0F0A210077B7C4 /* AwardSimpleView.swift */,
-				74E2F4882F0F0A210077B7C4 /* NewWordView.swift */,
-				74E2F4892F0F0A210077B7C4 /* QuestionView.swift */,
-				74E06B1F2F1047B00096ECA4 /* StoriCellView.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		74E2F48C2F0F0A210077B7C4 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				74E2F48B2F0F0A210077B7C4 /* MainView.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		74E2F48F2F0F0A210077B7C4 /* Onbording */ = {
-			isa = PBXGroup;
-			children = (
-				74E2F48D2F0F0A210077B7C4 /* OnbordingView.swift */,
-				74E2F48E2F0F0A210077B7C4 /* OnBordingViewModel.swift */,
-			);
-			path = Onbording;
-			sourceTree = "<group>";
-		};
-		74E2F4912F0F0A210077B7C4 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				74E2F4902F0F0A210077B7C4 /* SettingsView.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		74E2F4922F0F0A210077B7C4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				74E2F47C2F0F0A210077B7C4 /* Awards */,
-				74E2F4852F0F0A210077B7C4 /* Games */,
-				74E2F48A2F0F0A210077B7C4 /* Helpers */,
-				74E2F48C2F0F0A210077B7C4 /* Main */,
-				74E2F48F2F0F0A210077B7C4 /* Onbording */,
-				74E2F4912F0F0A210077B7C4 /* Settings */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		74E2F49D2F0F0A210077B7C4 /* LeprechunHils */ = {
-			isa = PBXGroup;
-			children = (
-				74E2F4922F0F0A210077B7C4 /* Views */,
-				74E2F4932F0F0A210077B7C4 /* AppDelegate.swift */,
-				74E2F4942F0F0A210077B7C4 /* Assets.xcassets */,
-				74E2F4952F0F0A210077B7C4 /* ContentView.swift */,
-				74E2F4962F0F0A210077B7C4 /* Info.plist */,
-				74E2F4982F0F0A210077B7C4 /* LaunchScreen.storyboard */,
-				74E2F49A2F0F0A210077B7C4 /* Main.storyboard */,
-				74E2F49B2F0F0A210077B7C4 /* SceneDelegate.swift */,
-				74E2F49C2F0F0A210077B7C4 /* ViewController.swift */,
-			);
-			path = LeprechunHils;
 			sourceTree = "<group>";
 		};
 		F0A40AF2922CCB3AC114C1D2 /* Pods */ = {
@@ -223,6 +95,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				74D73D812F1796A900611F50 /* LeprechunHils */,
 			);
 			name = LeprechunHils;
 			productName = LeprechunHils;
@@ -253,6 +128,10 @@
 				Base,
 			);
 			mainGroup = 74E2F0472F0D3DCF0077B7C4;
+			packageReferences = (
+				74D73DAC2F17982C00611F50 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				74D73DAF2F17991300611F50 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 74E2F0512F0D3DCF0077B7C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,9 +146,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E2F49E2F0F0A210077B7C4 /* Assets.xcassets in Resources */,
-				74E2F4A02F0F0A210077B7C4 /* LaunchScreen.storyboard in Resources */,
-				74E2F4A12F0F0A210077B7C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,53 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E2F4A22F0F0A210077B7C4 /* AwardsManager.swift in Sources */,
-				74E2F4A32F0F0A210077B7C4 /* AwardsView.swift in Sources */,
-				74E2F4A42F0F0A210077B7C4 /* GamesView.swift in Sources */,
-				74E2F4A52F0F0A210077B7C4 /* LeprechaunStoriesView.swift in Sources */,
-				74E2F4A62F0F0A210077B7C4 /* MagicWordView.swift in Sources */,
-				74E2F4A72F0F0A210077B7C4 /* MagicWordViewModel.swift in Sources */,
-				74E2F4A82F0F0A210077B7C4 /* MatchCloverView.swift in Sources */,
-				74E2F4A92F0F0A210077B7C4 /* MatchCloverViewModel.swift in Sources */,
-				74E2F4AA2F0F0A210077B7C4 /* QuizViewModel.swift in Sources */,
-				74E2F4AB2F0F0A210077B7C4 /* RainBowQuizView.swift in Sources */,
-				74E2F4AC2F0F0A210077B7C4 /* AwardModalView.swift in Sources */,
-				74E2F4AD2F0F0A210077B7C4 /* AwardSimpleView.swift in Sources */,
-				74E2F4AE2F0F0A210077B7C4 /* NewWordView.swift in Sources */,
-				74E2F4AF2F0F0A210077B7C4 /* QuestionView.swift in Sources */,
-				74E06B222F1049380096ECA4 /* SimpleStoryView.swift in Sources */,
-				74E2F4B02F0F0A210077B7C4 /* MainView.swift in Sources */,
-				74E2F4B12F0F0A210077B7C4 /* OnbordingView.swift in Sources */,
-				74E2F4B22F0F0A210077B7C4 /* OnBordingViewModel.swift in Sources */,
-				74E2F4B32F0F0A210077B7C4 /* SettingsView.swift in Sources */,
-				74E2F4B42F0F0A210077B7C4 /* AppDelegate.swift in Sources */,
-				74E2F4B52F0F0A210077B7C4 /* ContentView.swift in Sources */,
-				74E2F4B62F0F0A210077B7C4 /* SceneDelegate.swift in Sources */,
-				74E06B202F1047B00096ECA4 /* StoriCellView.swift in Sources */,
-				74E2F4B72F0F0A210077B7C4 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		74E2F4982F0F0A210077B7C4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74E2F4972F0F0A210077B7C4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		74E2F49A2F0F0A210077B7C4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74E2F4992F0F0A210077B7C4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		74E2F0642F0D3DD10077B7C4 /* Debug */ = {
@@ -375,7 +208,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lepric2332.pre3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -413,7 +246,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lepric2332.pre3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -571,6 +404,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74D73DAC2F17982C00611F50 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.8;
+			};
+		};
+		74D73DAF2F17991300611F50 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74D73DAD2F17982C00611F50 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74D73DAC2F17982C00611F50 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		74D73DB02F17991300611F50 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74D73DAF2F17991300611F50 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74E2F0482F0D3DCF0077B7C4 /* Project object */;
 }
